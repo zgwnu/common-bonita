@@ -1,7 +1,7 @@
 import { ZgwnuBonitaProcessActivationStateType } from './zgwnu-bonita-process-activation-state.type'
 import { ZgwnuBonitaProcessConfigurationStateType } from './zgwnu-bonita-process-configuration-state.type'
 
-export class DeployProcessDefinitionSuccessResponse {
+export class ZgwnuBonitaDeployProcessDefinitionSuccessResponse {
     id: string
     deploymentDate: string
     description: string
