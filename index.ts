@@ -12,5 +12,8 @@ export * from './bpm-process/zgwnu-bonita-deploy-process-definition-response'
 export * from './bpm-process/zgwnu-bonita-process-definition'
 export * from './bpm-process/zgwnu-bonita-process-update-input'
 
+// Common Bonita Business Data
+export * from './business-data/zgwnu-bonita-business-data-query-parms'
+
 // Common Bonita File Upload
 export * from './file-upload/zgwnu-bonita-file-upload-response'
