@@ -4,7 +4,11 @@
   "description": "Common Typescript Classes and Types for Bonita Rest Api development",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"test\""
+    "test": "echo \"test\" && npm run build",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^2.4.2"
   },
   "repository": {
     "type": "git",
