@@ -19,5 +19,4 @@ Bonita Rest Api Business Data Management Datastructures and Parameters
 ## BPM
 Bonita Rest Api Business Process Management Datastuctures and Parameters
 * ZgwnuBonitaSearchParms
-## BPM / Process
-  * *
+  * BPM / Process * T
