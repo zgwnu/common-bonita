@@ -1,5 +1,5 @@
 {
-  "name": "common-bonita",
+  "name": "@zgwnu/common-bonita",
   "version": "1.0.0",
   "description": "Common Typescript Classes and Types for Bonita Rest Api development",
   "main": "index.ts",
