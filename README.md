@@ -8,7 +8,7 @@ __npm install https://github.com/zgwnu/common-bonita.git --save__
 __git clone https://github.com/zgwnu/common-bonita.git (destination directory/folder)__
 
 # Library Content
-Datastructures en Parameters that can be used to create a Bonita Rest Api application with Typescript (Node, Angular, ...). Does NOT Contai Rest Api Services (JS-framework independant library).
+Datastructures en Parameters that can be used to create a Bonita Rest Api application with Typescript (Node, Angular, ...). Does NOT Contain Rest Api Services (JS-framework independant library).
 
 ## Authentication
 Basic Bonita Rest Api Connection Parameters
