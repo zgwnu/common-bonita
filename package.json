@@ -4,6 +4,7 @@
   "description": "Common Typescript Classes and Types for Bonita Rest Api development",
   "main": "index.ts",
   "scripts": {
+    "start": "npm run build",
     "test": "echo \"test\" && npm run build",
     "build": "tsc"
   },
