@@ -4,9 +4,8 @@
   "description": "Common Typescript Classes and Types for Bonita Rest Api development",
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "npm run build",
+    "build": "tsc -p src",    
     "test": "echo \"test\" && npm run build",
-    "build": "tsc -p src"
   },
   "devDependencies": {
     "typescript": "^2.5.2"
