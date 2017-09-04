@@ -2,7 +2,7 @@
   "name": "@zgwnu/common-bonita",
   "version": "1.0.0",
   "description": "Common Typescript Classes and Types for Bonita Rest Api development",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "npm run build",
     "test": "echo \"test\" && npm run build",
