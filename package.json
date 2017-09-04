@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "npm run build",
     "test": "echo \"test\" && npm run build",
-    "build": "tsc"
+    "build": "tsc -p src"
   },
   "devDependencies": {
     "typescript": "^2.5.2"
