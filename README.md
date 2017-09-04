@@ -1,4 +1,4 @@
-# ZGW NU Common Bonita
+# @zgwnu/common-bonita
 Common Typescript Classes and Types for Bonita Rest Api Development. 
 
 # Install
@@ -7,8 +7,8 @@ __npm install https://github.com/zgwnu/common-bonita.git --save__
 ## GIT
 __git clone https://github.com/zgwnu/common-bonita.git (destination directory/folder)__
 
-# Library Content
-Datastructures en Parameters that can be used to create a Bonita Rest Api application with Typescript (Node, Angular, ...). Contains no services (JS-framework independant lib).
+# Content
+Datastructures en Parameters that can be used to create a Bonita Rest Api application with Typescript (Node, Angular, ...). Does NOT Contain Rest Api Services (JS-framework independant library).
 
 ## Authentication
 Basic Bonita Rest Api Connection Parameters
