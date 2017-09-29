@@ -8,7 +8,7 @@
     "test": "echo \"test\" && npm run build"
   },
   "devDependencies": {
-    "typescript": "^2.5.2"
+    "typescript": "2.5.3"
   },
   "repository": {
     "type": "git",

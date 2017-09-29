@@ -8,14 +8,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Request URL template: ../API/bdm/businessData/_businessDataType_?q=_queryName_
 //                       &p=0&c=10&f=param=value
 //
-var ZgwnuBonitaBusinessDataQueryParms = /** @class */ (function () {
-    function ZgwnuBonitaBusinessDataQueryParms(queryName, page, count, parameterValues) {
+class ZgwnuBonitaBusinessDataQueryParms {
+    constructor(queryName, page, count, parameterValues) {
         this.queryName = queryName;
         this.page = page;
         this.count = count;
         this.parameterValues = parameterValues;
     }
-    ZgwnuBonitaBusinessDataQueryParms.prototype.getUrlEncondedParms = function () {
+    getUrlEncondedParms() {
         var buildParms;
         // q=queryName - the query name
         buildParms = '&q=' + this.queryName;
@@ -27,15 +27,13 @@ var ZgwnuBonitaBusinessDataQueryParms = /** @class */ (function () {
         //             defined in Bonita BPM Studio For a Boolean parameter, 
         //             the accepted values are true or false.
         if (this.parameterValues != undefined) {
-            for (var _i = 0, _a = this.parameterValues; _i < _a.length; _i++) {
-                var value = _a[_i];
+            for (let value of this.parameterValues) {
                 buildParms = buildParms + '&f=' + encodeURIComponent(value);
             }
         }
         // return spaces '+' encoded
         var urlEncodedParms = buildParms.replace(/%20/g, '+');
         return urlEncodedParms;
-    };
-    return ZgwnuBonitaBusinessDataQueryParms;
-}());
+    }
+}
 exports.ZgwnuBonitaBusinessDataQueryParms = ZgwnuBonitaBusinessDataQueryParms;

@@ -8,8 +8,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Request URL template: .../API/resource?p={page}&c={count}&o={order}
 //                       &s={query}&f={filter_name}={filter_value}&f=...
 //
-var ZgwnuBonitaSearchParms = /** @class */ (function () {
-    function ZgwnuBonitaSearchParms(page, count, order, query, filters, deploys) {
+class ZgwnuBonitaSearchParms {
+    constructor(page, count, order, query, filters, deploys) {
         this.page = page;
         this.count = count;
         this.order = order;
@@ -17,7 +17,7 @@ var ZgwnuBonitaSearchParms = /** @class */ (function () {
         this.filters = filters;
         this.deploys = deploys;
     }
-    ZgwnuBonitaSearchParms.prototype.getUrlEncondedParms = function () {
+    getUrlEncondedParms() {
         var buildParms;
         // p: index of the page to display
         buildParms = 'p=' + String(this.page);
@@ -37,8 +37,7 @@ var ZgwnuBonitaSearchParms = /** @class */ (function () {
         // f: list of filters, specified as attributeName=attributeValue. 
         //    To filter on more than one attribute, specify an f parameters for each attribute.
         if (this.filters) {
-            for (var _i = 0, _a = this.filters; _i < _a.length; _i++) {
-                var filter = _a[_i];
+            for (let filter of this.filters) {
                 buildParms = buildParms + '&f=' + encodeURIComponent(filter);
             }
         }
@@ -47,15 +46,13 @@ var ZgwnuBonitaSearchParms = /** @class */ (function () {
         //    and retrieve attributes of a linked resource.
         //    This means that instead of retrieving the ID or a parent or referenced resource, you can retrieve the full object.
         if (this.deploys) {
-            for (var _b = 0, _c = this.deploys; _b < _c.length; _b++) {
-                var deploy = _c[_b];
+            for (let deploy of this.deploys) {
                 buildParms = buildParms + '&d=' + encodeURIComponent(deploy);
             }
         }
         // return spaces '+' encoded
         var urlEncodedParms = buildParms.replace(/%20/g, '+');
         return urlEncodedParms;
-    };
-    return ZgwnuBonitaSearchParms;
-}());
+    }
+}
 exports.ZgwnuBonitaSearchParms = ZgwnuBonitaSearchParms;
